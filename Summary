@@ -1,0 +1,86 @@
+/****************************************************** Linux Basics For Hackers **************************************************/
+
+ INTRO --> How To Install Kali-linux on VirtualBox -------> You Can Follow The Instructions From the Book Or Read This Documentation 
+                                       " https://www.kali.org/docs/virtualization/"
+
+     ******************************************************* Chapter 1  *******************************************************
+
+*********************************
+INTRODUCTORY TERMS AND CONCEPTS *
+*********************************
+
+1-Binaries :  The files that can be executed, similar to executables in Windows.
+              generally reside in the /usr/bin or usr/sbin directory and include
+              utilities such as ps, cat, ls, and cd and the wireless hacking tool aircrack ng and the intrusion
+              detection system (IDS) Snort.
+2-Case sensitivity : Linux is case sensitive . "And" not like "and" 
+3-Directory : same as a folder in Windows. it provides a way of
+              organizing files, usually in a hierarchical manner
+4-Home : Each user has their own /home directory, when files are created it will be saved by default in home 
+5-root : administrator or superuser account like administrator in windows
+6-Script : series of commands run in an interpretive environment that converts
+           each line to source code.can be run with the bash interpreter 
+           or any other scripting language interpreters, such as Python
+7-Shell : This is the interpreter for running commands in Linux. The
+          most widely used shell is bash
+8-Terminal : This is a command line interface (CLI). like cmd in windows
+
+**********************
+The Linux Filesystem *
+**********************
+
+The Linux filesystem structure is somewhat different from that of Windows. Linux
+doesn’t have a physical drive (such as the C: drive) at the base of the filesystem but uses
+a logical filesystem instead. At the very top of the filesystem structure is /, which is
+often referred to as the root of the filesystem.
+
+**********************
+
+the most important subdirectories to know
+
+/root The home directory of the all powerful root user
+/etc Generally contains the Linux configuration files—files that control when and how
+programs start up
+/home The user’s home directory
+/mnt Where other filesystems are attached or mounted to the filesystem
+/media Where CDs and USB devices are usually attached or mounted to the filesystem
+/bin Where application binaries (the equivalent of executables in Microsoft Windows)
+reside
+/lib Where you’ll find libraries
+
+*************************
+BASIC COMMANDS IN LINUX *
+*************************
+
+1-pwd : to know where you are
+2-whoami : to know which user you are logged in as
+3-cd : to change the directory
+4-cd.. : to move up one level in file structure
+5-cd.. .. : to move up two levels ,and so on cd.. .. ..
+6-cd/ : move up to root level
+7-ls : list the contents of a directory
+8-ls -l : list the contents of a directory with more information 
+9-ls-la : list the contents of a directory and hidden files with more information
+10- --help ,-h, ?: to get help
+11-man : Referencing Manual Pages
+12-locate : Followed by a keyword denoting what it
+            is you want to find, this command will go through your entire filesystem and locate
+            every occurrence of that word. 
+13-whereis : to find the Binaries
+14-which : is more specific cause it only returns the location of the binaries in
+           the PATH variable in Linux
+15-find directory options expression : is the most powerful and flexible of the searching utilities
+16-ps aux : list of all the processes running in this system
+17-cat :  display the contents of the file
+18- cat > : create a file
+19- cat >> : To add, or append, more content to a file
+20-touch : create a new file
+21-mkdir : create a new directory
+22-cp file /../../.. : copy file to another
+23-mv : can be used to move a file or directory to a new location or simply to
+        give an existing file a new name
+24-rm : to remove a file
+25-rmdir : to remove an empty directory
+26-rm -r : to remove a directory
+
+     ******************************************************* Chapter  2 *******************************************************
