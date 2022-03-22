@@ -122,4 +122,12 @@ Changing Your Network Mask and Broadcast Address :--> ifconfig eth0 192.168.161.
    
 Assigning New IP Addresses from the DHCP Server:--> To request an IP address from DHCP, simply call the DHCP server with the command
                                                     dhclient followed by the interface you want the address assigned to.
- 
+MANIPULATING THE DOMAIN NAME SYSTEM-->  One of the most useful commands is dig, which offers a way to
+                                        gather DNS information about a target domain.This information could include the IP address
+                                        of the target’s nameserver (the server that translates the target’s name to an IP address),
+                                        the target’s email server, and potentially any subdomains and IP addresses.
+leafpad : To change Your DNS Server
+
+**********************************
+****************************************
+*********************************************
