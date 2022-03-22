@@ -92,3 +92,12 @@ grep : is probably the most widely used text manipulation command. It lets you
        filter the content of a file for display
 set : lets you search for occurrences of a word or a text pattern and then
       perform some action on it.
+more : displays a page of a file at a time and lets you page down through it using the ENTER key
+less : is very similar to more, but with additional functionality—hence
+  
+    ******************************************************* Chapter  3 *******************************************************
+
+**********************************
+ANALYZING NETWORKS WITH IFCONFIG *
+**********************************
+ifconfig : to get network information
