@@ -101,3 +101,25 @@ less : is very similar to more, but with additional functionality—hence
 ANALYZING NETWORKS WITH IFCONFIG *
 **********************************
 ifconfig : to get network information
+iwconfig : to get information on wireless adapter
+
+***********************************
+CHANGING YOUR NETWORK INFORMATION *
+***********************************
+Changing Your IP Address :--> To change IP address, enter ifconfig followed by the interface you want to reassign
+                              and the new IP address you want assigned to that interface
+    
+   >ifconfig eth0 192.168.161.137
+    
+Changing Your Network Mask and Broadcast Address :--> ifconfig eth0 192.168.161.137 netmask 255.255.0.0 broadcast 192.168.1.255
+                                                      Spoofing Your MAC Address:--> To spoof your MAC address, simply use the ifconfig 
+                                                      command’s down option to take down the interface,Then enter the ifconfig command
+                                                      followed by the interface name and the new spoofed MAC address.
+                                                      Finally, bring the interface back up with the up option for the change to take place.
+   >ifconfig eth0 down
+   >ifconfig eth0 hw ether 00:11:22:33:44:55
+   >ifconfig eth0 up
+   
+Assigning New IP Addresses from the DHCP Server:--> To request an IP address from DHCP, simply call the DHCP server with the command
+                                                    dhclient followed by the interface you want the address assigned to.
+ 
